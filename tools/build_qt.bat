@@ -1,4 +1,3 @@
-@echo off
 setlocal
 
 cd %QTBUILDDIR% ||  exit /b %errorlevel%

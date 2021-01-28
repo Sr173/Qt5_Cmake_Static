@@ -26,7 +26,7 @@ cd %QTBUILDDIR%  ||  exit /b %errorlevel%
 
 echo Configuring Qt...
 start /W /BELOWNORMAL "Configuring Qt..." %QTDIR%\configure.bat -prefix %QTINSTALLDIR% -platform %PLATFORM% ^
--opensource -release -confirm-license -opengl dynamic -mp -static -static-runtime -no-shared ^
+-opensource -debug-and-release -confirm-license -opengl dynamic -mp -static -static-runtime -no-shared ^
 -qt-libpng -qt-libjpeg -qt-zlib -qt-pcre -no-compile-examples -nomake examples ^
 -no-icu -optimize-size %EXTRABUILDOPTIONS% ^
 -openssl-linked OPENSSL_PREFIX=%SSLINSTALLDIR% ^&^& exit
